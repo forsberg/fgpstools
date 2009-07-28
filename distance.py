@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 # Read a GPX file and calculate the distance travelled in the first track of the file
 # Output distance and mean speed.
+# License: GNU General Public License
 
 import sys
 import math
 from xml.dom import minidom
+
+# EarthDistance code swiped from gpsd's python bindings, which in turn swiped them from kismet (GPL).
 
 def Deg2Rad(x):
     "Degrees to radians."
